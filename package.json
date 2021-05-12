@@ -1,0 +1,25 @@
+{
+  "name": "blood-monitor-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "watch": "NODE_ENV=development webpack --watch",
+    "start-api": "sam local start-api -p 3000 -t ./sam/dev/template.yaml "
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.31",
+    "@types/glob": "^7.1.1",
+    "@types/node": "^12.7.2",
+    "@types/webpack": "^4.39.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "aws-sdk": "^2.514.0",
+    "glob": "^7.1.4",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}
